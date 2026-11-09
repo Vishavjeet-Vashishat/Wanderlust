@@ -1,6 +1,6 @@
 🌍 Wanderlust — Tour Management REST API
 
-A RESTful backend application for managing tours, built using Node.js, Express.js and MongoDB. Wanderlust demonstrates backend development concepts, RESTful API design, database integration and modular application architecture.
+A RESTful backend application for managing tours, built using Node.js, Express.js and MongoDB. Wanderlust demonstrates backend development concepts, RESTful API design, database integration and modular application architecture usig MVC architecture.
 
 🚀 Tech Stack
 
@@ -31,7 +31,7 @@ Wanderlust/
 
 ├── utils/
 
-├── /
+├── .env.example/
 
 │
 
@@ -55,7 +55,7 @@ Wanderlust/
 
 ├── package-lock.json
 
-└── README.md
+└── readme.md
 
 ⚙️ Installation & Setup
 
