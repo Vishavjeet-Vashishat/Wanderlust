@@ -1,4 +1,3 @@
-import { error } from 'console';
 import { Tour } from './../models/tourModel.js';
 import { APIfeatures } from '../utils/apiFeatures.js';
 import { AppError } from '../utils/appError.js';
