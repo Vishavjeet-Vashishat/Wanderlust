@@ -5,26 +5,14 @@ A RESTful backend application for managing tours, built using Node.js, Express.j
 🚀 Tech Stack
 
 - Runtime: Node.js
-- Backend Framework: Express.js
-- Database: MongoDB
-- ODM: Mongoose
-- Language: JavaScript (ES6+)
-- Environment Variables: dotenv
-- HTTP Request Logging: Morgan
-- Development Tool: Nodemon
-
-✨ Features
-
-- RESTful API architecture using Express.js.
-- Modular application structure with separate routes, controllers and models.
-- Tour and user resource management.
-- MongoDB integration using Mongoose.
-- Advanced API filtering and sorting.
-- Field limiting for optimized API responses.
-- Pagination for efficient data retrieval.
-- Centralized error-handling middleware.
-- Custom error handling and asynchronous error management.
-- Environment-based configuration.
+- Framework: Express.js
+- Database: MongoDB, Mongoose
+- Authentication: JSON Web Tokens (JWT), bcryptjs
+- Payments: Razorpay
+- Email: Nodemailer
+- File Handling: Multer, Sharp
+- Security: Helmet, express-rate-limit, express-mongo-sanitize
+- Code Quality: ESLint, Prettier
 
 📁 Project Structure
 Wanderlust/
@@ -33,13 +21,17 @@ Wanderlust/
 
 ├── controllers/
 
+├── dev-data/
+
 ├── models/
+
+├── public/
 
 ├── routes/
 
 ├── utils/
 
-├── public/
+├── /
 
 │
 
@@ -49,6 +41,12 @@ Wanderlust/
 
 │
 
+├── .eslintrc.json
+
+├── .gitignore
+
+├── .prettierrc
+
 ├── app.js
 
 ├── server.js
@@ -56,10 +54,6 @@ Wanderlust/
 ├── package.json
 
 ├── package-lock.json
-
-├── .env.example
-
-├── .gitignore
 
 └── README.md
 
@@ -74,7 +68,7 @@ Prerequisites
 
 1. Clone the Repository
 
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/Vishavjeet-Vashishat/Wanderlust.git
 
 2. Navigate to the Project Directory
 
@@ -86,13 +80,13 @@ npm install
 
 4. Configure Environment Variables
 
-Create a .env file in the root directory.
+Create a .env file in the root directory of the project.
 
-Replace the placeholder database connection string with your MongoDB connection URI.
+Use .env.example as a reference and configure the variables:
 
 5. Start the Development Server
 
-npm run dev
+npm start
 
 The application should be available at:
 
@@ -100,43 +94,9 @@ http://localhost:3000
 
 📡 API Documentation & Testing
 
-The API endpoints can be explored and tested using the Postman collection included in this repository.
+API endpoints can be tested using Postman⁠.
 
-Postman Collection: postman/Wanderlust.postman_collection.json
-
-The collection contains API requests organized by resource, including request methods, parameters and example payloads.
-
-Running API Requests
-
-1. Clone the repository and install the dependencies.
-2. Configure the required environment variables.
-3. Start the local Express server.
-4. Import the Postman collection into Postman.
-5. Configure the base URL.
-6. Execute the API requests.
-
-Local API Base URL:
-http://localhost:3000/api/v1
-
-🧠 Concepts Demonstrated
-
-- Node.js runtime and asynchronous programming.
-- Express.js middleware architecture.
-- RESTful API design principles.
-- MVC (Model-View-Controller) architecture.
-- MongoDB and Mongoose.
-- Database querying and filtering.
-- Sorting, field limiting and pagination.
-- Centralized error handling.
-- Environment variable management.
-- JavaScript ES Modules (ESM).
-
-🔐 Security & Configuration
-
-- Environment variables for sensitive configuration.
-- Database connection through Mongoose.
-- Centralized error handling.
-- Separation of application configuration and server initialization.
+A Postman collection will be provided in the repository.
 
 👨‍💻 Author
 
