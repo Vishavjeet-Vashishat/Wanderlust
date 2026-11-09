@@ -86,11 +86,19 @@ The application should be available at:
 
 http://localhost:3000
 
-📡 API Documentation & Testing
+📡 API Testing
 
 API endpoints can be tested using Postman⁠.
 
-A Postman collection will be provided in the repository.
+A Postman collection JSON file will be provided in the repository to test API.
+
+How to use:
+
+1. Download the collection JSON file.
+2. Open Postman and click Import.
+3. Select the downloaded JSON file.
+4. Start the backend server and configure the base URL (http://localhost:3000/api/v1).
+5. Import and test the available API requests.
 
 👨‍💻 Author
 
