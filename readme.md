@@ -25,6 +25,8 @@ Wanderlust/
 
 ├── models/
 
+├── postman/
+
 ├── public/
 
 ├── routes/
@@ -32,14 +34,6 @@ Wanderlust/
 ├── utils/
 
 ├── .env.example/
-
-│
-
-├── postman/
-
-│ └── Wanderlust.postman_collection.json
-
-│
 
 ├── .eslintrc.json
 
@@ -49,13 +43,13 @@ Wanderlust/
 
 ├── app.js
 
-├── server.js
+├── package-lock.json
 
 ├── package.json
 
-├── package-lock.json
-
 └── readme.md
+
+├── server.js
 
 ⚙️ Installation & Setup
 
